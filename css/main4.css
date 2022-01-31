@@ -1,0 +1,915 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial,sans-serif;
+}
+
+.logo-container {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+}
+
+.logo {
+  width: 170px;
+  border-radius: 20%;
+  margin-top: -10px;
+  margin-left: 80px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  height: 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav-items-container {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav li {
+  float: left;
+  margin-right: 60px;
+  position: relative;
+  list-style: none;
+  font-family: 'Dongle', sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.name {
+  text-decoration: none;
+  margin-left: 150px;
+  margin-top: -47px;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.name:hover {
+  background-color: white;
+  color: black;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.sign {
+  position: relative;
+  background-color: #0dd26a;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 30px;
+  border: none;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  margin-left: 100px;
+  font-family: 'Dongle', sans-serif;
+}
+
+.log {
+  position: relative;
+  background-color: #0dd26a;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 30px;
+  border: none;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  margin-left: 30px;
+  margin-top: -40px;
+  font-family: 'Dongle', sans-serif;
+}
+
+.buttons {
+  width: 40%;
+  margin-top: 30px;
+}
+
+.log:hover, .log:focus {
+  opacity: 0.9;
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+  color: white;
+}
+
+.sign:hover, .sign:focus {
+  opacity: 0.9;
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 100px;
+  color: #1b1b1b;
+}
+
+p {
+  text-align: center;
+  line-height: 25px;
+  color: #363636;
+}
+
+.btn {
+  background-color: #0dd26a;
+  color: white;
+  width: 170px;
+  height: 45px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-top: 40px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #32ac6b;
+}
+
+.btn:hover .fas {
+  -webkit-transform: translateY(0.25em);
+          transform: translateY(0.25em);
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.btn3 {
+  margin-left: 50px;
+}
+
+.btn2 {
+  margin-left: 50px;
+}
+
+.btn1 {
+  margin-left: 400px;
+}
+
+.topics {
+  display: inline-block;
+  background-color: #f0f0f0;
+  margin-top: 150px;
+  width: 100%;
+  height: 100vh;
+}
+
+h2 {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 600px;
+  font-size: 40px;
+  cursor: pointer;
+  width: 25%;
+  -webkit-transition: all ease-in-out 0.1s;
+  transition: all ease-in-out 0.1s;
+}
+
+h2:hover {
+  color: #0dd26a;
+}
+
+h2:hover .fa-chevron-right {
+  color: #636363;
+  -webkit-transform: translateX(0.25em);
+          transform: translateX(0.25em);
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.fa-chevron-right::before {
+  color: gray;
+}
+
+.card {
+  width: 20%;
+  height: 450px;
+  margin-left: 250px;
+  margin-top: 50px;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topic {
+  display: inline-block;
+  width: 100%;
+}
+
+.bottomCard {
+  position: relative;
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 200px;
+}
+
+h3 {
+  text-align: center;
+  margin-left: 50px;
+  width: 200px;
+  height: 30px;
+  padding: 5px 0;
+  background-color: gray;
+  color: white;
+  margin-top: 45px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.email {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .bottomCard {
+  -webkit-transform: translateY(-16em);
+          transform: translateY(-16em);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  background-color: #171819;
+}
+
+.card:hover h3 {
+  color: white;
+  background-color: #171819;
+}
+
+.card:hover h3:hover {
+  background-color: #797979;
+}
+
+.card:hover .email {
+  color: white;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.card:hover .btnRead {
+  position: fixed;
+  bottom: 100px;
+  margin-left: 90px;
+  cursor: pointer;
+  visibility: visible;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+.card:hover .btnRead:hover {
+  opacity: 0.6;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.card:hover .practices {
+  background-color: black;
+}
+
+.card:hover .practices:hover {
+  background-color: gray;
+}
+
+.btnRead {
+  visibility: hidden;
+  background-color: #0dd26a;
+  color: white;
+  width: 120px;
+  height: 35px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  text-align: center;
+}
+
+span {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.card2 {
+  width: 20%;
+  height: 450px;
+  margin-left: 600px;
+  margin-top: -450px;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topic2 {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+}
+
+.bottomCard2 {
+  position: relative;
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 200px;
+}
+
+h4 {
+  position: relative;
+  text-align: center;
+  margin-left: 50px;
+  width: 200px;
+  height: 30px;
+  padding: 5px 0;
+  background-color: gray;
+  color: white;
+  font-size: 18px;
+}
+
+.email2 {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.card2:hover {
+  cursor: pointer;
+}
+
+.card2:hover .bottomCard2 {
+  -webkit-transform: translateY(-15.9em);
+          transform: translateY(-15.9em);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  background-color: #171819;
+}
+
+.card2:hover h4 {
+  color: white;
+  background-color: #171819;
+}
+
+.card2:hover h4:hover {
+  background-color: #797979;
+}
+
+.card2:hover .email2 {
+  color: white;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.card2:hover .btnRead2 {
+  position: fixed;
+  bottom: 100px;
+  margin-left: 90px;
+  cursor: pointer;
+  visibility: visible;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+.card2:hover .btnRead2:hover {
+  opacity: 0.9;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.card2:hover h5 {
+  color: #0dd26a;
+  background-color: black;
+  text-align: center;
+}
+
+.card2:hover h5:hover {
+  background-color: gray;
+}
+
+.card2:hover .practices {
+  background-color: black;
+}
+
+.card2:hover .practices2 {
+  background-color: black;
+}
+
+.card2:hover .practices:hover {
+  background-color: gray;
+}
+
+.card2:hover .practices2:hover {
+  background-color: gray;
+}
+
+.btnRead2 {
+  visibility: hidden;
+  background-color: #0dd26a;
+  color: white;
+  width: 120px;
+  height: 35px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  text-align: center;
+}
+
+span {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 2px 0;
+}
+
+.industry {
+  position: relative;
+  width: 100px;
+  height: 25px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  color: #0dd26a;
+  background-color: whitesmoke;
+  margin-left: 100px;
+  margin-top: -5px;
+}
+
+.card3 {
+  width: 20%;
+  height: 450px;
+  margin-left: 950px;
+  margin-top: -450px;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topic3 {
+  display: inline-block;
+  width: 100%;
+}
+
+.bottomCard3 {
+  position: relative;
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 200px;
+}
+
+h4 {
+  text-align: center;
+  margin-left: 50px;
+  width: 200px;
+  height: 30px;
+  padding: 5px 0;
+  background-color: gray;
+  color: white;
+  margin-top: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.email3 {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.card3:hover {
+  cursor: pointer;
+}
+
+.card3:hover .bottomCard3 {
+  position: relative;
+  -webkit-transform: translateY(-15.9em);
+          transform: translateY(-15.9em);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  background-color: #171819;
+}
+
+.card3:hover h4 {
+  color: white;
+  background-color: #171819;
+}
+
+.card3:hover h4:hover {
+  background-color: #797979;
+}
+
+.card3:hover .email3 {
+  color: white;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.card3:hover .btnRead3 {
+  position: fixed;
+  bottom: 100px;
+  margin-left: 90px;
+  cursor: pointer;
+  visibility: visible;
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+.card3:hover .btnRead3:hover {
+  opacity: 0.9;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.card3:hover h6 {
+  color: #0dd26a;
+  background-color: black;
+  text-align: center;
+}
+
+.card3:hover h6:hover {
+  background-color: gray;
+}
+
+.card3:hover .industry3 {
+  color: #0dd26a;
+  background-color: black;
+  text-align: center;
+}
+
+.card3:hover .industry3:hover {
+  background-color: gray;
+}
+
+.btnRead3 {
+  visibility: hidden;
+  background-color: #0dd26a;
+  color: white;
+  width: 120px;
+  height: 35px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  text-align: center;
+}
+
+span {
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.industry2 {
+  position: relative;
+  width: 100px;
+  height: 25px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  color: #0dd26a;
+  background-color: whitesmoke;
+  margin-left: 50px;
+  margin-top: -5px;
+  font-size: 14px;
+}
+
+.industry3 {
+  position: relative;
+  width: 80px;
+  height: 25px;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  color: #0dd26a;
+  background-color: whitesmoke;
+  margin-left: 170px;
+  margin-top: -25px;
+  font-size: 13px;
+}
+
+.posts {
+  position: relative;
+  margin-left: 630px;
+  margin-top: 80px;
+  font-size: 17px;
+  font-weight: 400;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.fa-chevron-circle-right {
+  margin-right: 5px;
+}
+
+.posts:hover {
+  cursor: pointer;
+}
+
+.posts:hover .fa-chevron-circle-right {
+  -webkit-transform: translateX(0.25em);
+          transform: translateX(0.25em);
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.attorney-div {
+  background-color: white;
+}
+
+.practices {
+  font-size: 12px;
+  width: 160px;
+}
+
+.management {
+  position: relative;
+  width: 130px;
+  margin-left: 150px;
+  font-size: 10px;
+  margin-top: -44px;
+}
+
+.practices2 {
+  position: relative;
+  font-size: 10px;
+  width: 128px;
+  margin-left: 10px;
+}
+
+.industry4 {
+  position: relative;
+  margin-top: -5px;
+  margin-left: 110px;
+}
+
+.attorney-pic {
+  position: relative;
+  width: 100%;
+  height: 204px;
+}
+
+.attorney3 {
+  position: relative;
+  height: 200px;
+}
+
+.lienholder2 {
+  background-color: #b6b6b6;
+}
+
+.lienholder3 {
+  height: 200px;
+}
+
+.industry5 {
+  position: relative;
+  margin-left: 165px;
+  width: 130px;
+}
+
+.practices2x {
+  margin-left: 5px;
+  width: 155px;
+  font-size: 11px;
+}
+
+label {
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-items-container {
+    margin-top: 6%;
+    margin-left: 40%;
+    display: block;
+  }
+  label {
+    display: inline-block;
+    margin-left: 200px;
+    cursor: pointer;
+    color: #23CA66;
+    font-size: 30px;
+  }
+  .sign {
+    display: none;
+  }
+  .log {
+    display: none;
+  }
+  .logo {
+    position: absolute;
+    margin-left: 10px;
+  }
+  h1 {
+    width: 80%;
+    font-size: 55px;
+    margin-top: 60px;
+    margin-left: 50px;
+  }
+  .btn {
+    margin-left: 20px;
+  }
+  .pic {
+    margin-left: 50px;
+    margin-top: 280px;
+    width: 80%;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+  }
+  .buttons {
+    display: none;
+  }
+  @-webkit-keyframes down {
+    from {
+      top: 0px;
+    }
+    to {
+      top: 70px;
+    }
+  }
+  @keyframes down {
+    from {
+      top: 0px;
+    }
+    to {
+      top: 70px;
+    }
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+  #toggle:checked + .menu ul {
+    position: fixed;
+    width: 100%;
+    height: 400px;
+    background-color: #6d706e;
+    left: 0;
+    top: 70px;
+    -webkit-animation-name: down;
+            animation-name: down;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
+  #toggle:checked + .menu li a {
+    line-height: 100px;
+    margin-left: 200px;
+    color: white;
+  }
+  #toggle:checked + .menu li a::before {
+    position: absolute;
+    content: '';
+    left: 100;
+    bottom: 20px;
+    height: 3px;
+    width: 20%;
+    background-color: white;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  #toggle:checked + .menu li a:hover:before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+  }
+  .btn {
+    display: block;
+    margin-left: 150px;
+    margin-top: 60px;
+  }
+  h2 {
+    font-size: 30px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin-left: 130px;
+  }
+  .card {
+    width: 70%;
+    margin-left: 80px;
+  }
+  .card:hover {
+    cursor: pointer;
+  }
+  .card:hover .bottomCard {
+    -webkit-transform: translateY(-17em);
+            transform: translateY(-17em);
+  }
+  .card2 {
+    width: 70%;
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+  .card3 {
+    width: 70%;
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+  .card3:hover {
+    cursor: pointer;
+  }
+  .card3:hover .bottomCard3 {
+    -webkit-transform: translateY(-17.3em);
+            transform: translateY(-17.3em);
+  }
+  .card4:hover {
+    cursor: pointer;
+  }
+  .card4:hover .four {
+    -webkit-transform: translateY(-15.9em);
+            transform: translateY(-15.9em);
+  }
+  .card6:hover {
+    cursor: pointer;
+  }
+  .card6:hover .six {
+    -webkit-transform: translateY(-15.9em);
+            transform: translateY(-15.9em);
+  }
+  .card7:hover {
+    cursor: pointer;
+  }
+  .card7:hover .seven {
+    -webkit-transform: translateY(-17em);
+            transform: translateY(-17em);
+  }
+  .card9:hover {
+    cursor: pointer;
+  }
+  .card9:hover .nine {
+    -webkit-transform: translateY(-16em);
+            transform: translateY(-16em);
+  }
+  .posts {
+    margin-left: 150px;
+  }
+}
+/*# sourceMappingURL=main4.css.map */

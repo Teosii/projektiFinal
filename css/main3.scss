@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial,sans-serif;
+
+
+}
+
+.logo-container {
+    flex: 0.3;
+}
+.logo{
+    width: 170px;
+    border-radius: 20%;
+    margin-top: -10px;
+    margin-left: 80px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    height: 100px;
+    flex-direction: row;
+}
+
+ 
+.nav-items-container {
+    flex: 0.8;
+    width: 100%;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+    
+nav li {
+    float: left;
+    margin-right: 60px;
+    position: relative;
+    list-style: none;
+    font-family: 'Dongle', sans-serif;
+}
+nav  a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 30px;
+    font-weight: 900;
+    transition: all ease-in-out 0.3s;
+}
+
+.name{
+    text-decoration: none;
+    margin-left: 150px;
+    margin-top: -47px;
+    font-size: 28px;
+    font-weight: 900;
+}
+.name:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    box-shadow: none;
+}
+
+.sign{
+    position: relative;
+    background-color: #23CA66;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 30px;
+    border: none;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    margin-left: 100px;
+    font-family: 'Dongle', sans-serif;
+}
+
+.log{
+    position: relative;
+    background-color: #23CA66;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 30px;
+    border: none;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: -40px;
+    font-family: 'Dongle', sans-serif;
+
+}
+
+.buttons{
+    width: 40%;
+    margin-top: 30px;
+}
+
+.log:hover, .log:focus{
+    opacity: 0.9;
+    transform: translateY(-0.25em);
+    color: white;
+    
+}
+
+.sign:hover, .sign:focus{
+    opacity: 0.9;
+    transform: translateY(-0.25em);
+    color: white;
+}
+
+
+.content{
+    text-align: center;
+    margin-top: 200px;
+  
+  }
+  
+  h4{
+      text-transform: uppercase;
+      color: #568286;
+      font-weight: 900;
+  }
+  
+  .text1{
+      font-size: 40px;
+  }
+
+  .text2{
+      line-height: 25px;
+      color: rgb(68, 68, 68);
+  }
+
+  .btn{
+    background-color: #0dd26a;
+    color: white;
+    width: 200px;
+    height: 45px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus{
+    opacity: 0.9;
+    transform: translateY(-0.25em);
+}
+
+
+
+.footer{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: url(bg2.jpg) ;
+    background-size: cover;
+    z-index: -1;
+}
+
+.partner-container{
+    margin-top: 900px;
+}
+
+h1{
+    margin-left: 550px;
+    font-size: 28px;
+}
+
+.partner{
+    width: 10%;
+    margin-left: 600px;
+}
+
+.partner2{
+    width: 10%;
+}
+
+h2{
+    margin-left: 620px;
+    margin-top: 30px;
+    font-size: 28px;
+}
+.sync{
+    width: 10%;
+    margin-left: 80px;
+}
+
+.people{
+    margin-top: -100px;
+    width: 35%;
+    margin-left: 850px;
+}
+
+.access{
+    height: 300px;
+    margin-top: 150px;
+    background-color: rgb(235, 235, 235);
+}
+
+h3{
+    margin-top: -250px;
+    margin-left: -600px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.btn2{
+    margin-left: 380px;
+    width: 160px;
+}
+label{
+    display: none;
+}
+#toggle{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .nav-items-container{ 
+        margin-top: 6%;
+        margin-left: 40%;
+       display: block; 
+    }
+   label{
+       display: inline-block;
+       margin-left: 200px;
+       cursor: pointer;
+       color: #23CA66;
+       font-size: 30px;
+   }
+    .sign{
+        display: none;
+    }
+    .log{
+     display: none;
+    }
+   .logo{
+       position: absolute;
+       margin-left:10px;
+   }
+   h4{
+       font-size: 15px;
+       margin-top: -60px;
+   }
+   .text1{
+       width: 80%;
+       margin-left: 50px;
+       margin-top: 10px;
+       font-size: 28px;
+   }
+   .text2{
+       width:80%;
+       margin-left:70px;
+       margin-top: 30px;
+   }
+   .btn{
+       margin-left: 20px;
+   }
+   .menu{
+       text-align: center;
+       width: 100%;
+       display: none;
+   }
+ 
+   .menu a{
+       display: block;
+   }
+   .buttons{
+       display: none;
+   }
+
+   @keyframes down {
+    from {top:0px;}
+    to {top:70px;}
+   }
+
+    #toggle:checked +.menu{
+           display: block;
+           ul{
+            position: fixed;
+            width: 100%;
+            height:400px;
+            background-color:#6d706e;
+            left: 0;
+            top: 70px;
+            animation-name: down;
+            animation-duration: 1s;
+            
+          }
+          li a{
+              line-height: 100px;
+              margin-left: 200px;
+              color: white;
+          }    
+          li a::before{
+              position: absolute;
+              content: '';
+              left: 100;
+              bottom: 20px;
+              height: 3px;
+              width: 20%;
+              background-color: white;
+              transform: scaleX(0);
+              transform-origin: right;
+          }
+          li a:hover:before{
+              transform: scaleX(1);
+              transform-origin: left;
+              transition: all ease-in-out 0.3s;
+          }
+    }
+    h1{
+        width: 70%;
+        text-align: center;
+        margin-left: 80px;
+        margin-top: -50px;
+    }
+    .partner{
+        width: 30%;
+        margin-left: 110px;
+    }
+    .partner2{
+        width:30%;
+    }
+    h2{
+        width: max-content;
+        margin-left: 120px;
+    }
+    .sync{
+        width: 30%;
+    }
+    h3{
+       width: 70%;
+       margin-left: 80px; 
+       margin-top: 20px;
+    }
+    .btn2{
+        margin-left: 160px;
+    }
+    .people{
+       position: absolute;
+       margin-left: 50px;
+       margin-top: 250px;
+       width: 80%;
+       height: 50%;
+    }
+    .access{
+       position: absolute;
+       height: 70%;
+       margin-top: 40px;
+    }
+}
